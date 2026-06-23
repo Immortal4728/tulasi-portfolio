@@ -29,7 +29,7 @@ export default function Home() {
         {loading ? (
           <LoadingScreen key="loader" onComplete={() => setLoading(false)} />
         ) : (
-          <main key="content" className="relative w-full min-h-screen bg-[#030303] flex flex-col">
+          <main key="content" className="relative w-full min-h-screen bg-[#05040a] flex flex-col">
             <Navbar />
             <Hero />
             <AboutText />

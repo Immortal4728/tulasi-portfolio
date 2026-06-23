@@ -2,13 +2,13 @@
 
 @theme {
   --font-serif: var(--font-cormorant), serif;
-  --font-sans: var(--font-outfit), sans-serif;
+  --font-sans: var(--font-plus-jakarta), sans-serif;
   --font-script: var(--font-caveat), cursive;
   
-  --color-neon: #00FF55;
-  --color-neon-glow: rgba(0, 255, 85, 0.4);
-  --color-dark-pure: #030303;
-  --color-dark-surface: #0a0a0a;
+  --color-neon: #8B5CF6;
+  --color-neon-glow: rgba(139, 92, 246, 0.4);
+  --color-dark-pure: #05040a;
+  --color-dark-surface: #0e0c18;
   --color-dark-border: rgba(255, 255, 255, 0.08);
 }
 
@@ -99,8 +99,8 @@ body {
 
 .glass-panel-hover:hover {
   background: rgba(255, 255, 255, 0.03);
-  border-color: rgba(0, 255, 85, 0.2);
-  box-shadow: 0 8px 32px 0 rgba(0, 255, 85, 0.03);
+  border-color: rgba(139, 92, 246, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(139, 92, 246, 0.03);
 }
 
 /* Neon utilities */

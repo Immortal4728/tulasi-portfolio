@@ -80,9 +80,8 @@ export default function CustomCursor() {
         style={{
           left: `${position.x}px`,
           top: `${position.y}px`,
-          transform: `translate(-50%, -50%) scale(${isHovered ? 2.5 : 1})`,
-          backgroundColor: isHovered ? 'var(--color-neon)' : 'var(--color-neon)',
-          boxShadow: isHovered ? '0 0 15px var(--color-neon-glow)' : 'none',
+          transform: `translate(-50%, -50%) scale(${isHovered ? 2 : 1})`,
+          backgroundColor: 'white',
         }}
       />
       <div
@@ -90,10 +89,9 @@ export default function CustomCursor() {
         style={{
           left: `${followerPosition.x}px`,
           top: `${followerPosition.y}px`,
-          transform: `translate(-50%, -50%) scale(${isHovered ? 1.4 : 1})`,
-          borderColor: isHovered ? 'var(--color-neon)' : 'rgba(255, 255, 255, 0.3)',
-          backgroundColor: isHovered ? 'rgba(0, 255, 85, 0.05)' : 'transparent',
-          boxShadow: isHovered ? '0 0 20px rgba(0, 255, 85, 0.1) inset' : 'none',
+          transform: `translate(-50%, -50%) scale(${isHovered ? 1.2 : 1})`,
+          borderColor: isHovered ? 'white' : 'rgba(255, 255, 255, 0.2)',
+          backgroundColor: isHovered ? 'rgba(255, 255, 255, 0.05)' : 'transparent',
         }}
       />
     </>

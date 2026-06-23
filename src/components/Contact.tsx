@@ -26,17 +26,17 @@ export default function Contact() {
         {/* Section Header */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16 md:mb-24">
           <div className="lg:col-span-6">
-            <span className="text-[10px] uppercase tracking-[0.3em] font-mono text-[#00FF55] block mb-3 font-semibold">
+            <span className="text-[9px] uppercase tracking-[0.25em] font-mono text-zinc-500 block mb-3 font-semibold">
               05 // INITIATE
             </span>
             <h2 className="text-4xl md:text-6xl font-serif italic text-zinc-100 font-light leading-tight">
               Begin the <br />
-              <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-zinc-100 to-zinc-400">Collaboration.</span>
+              <span className="font-normal text-zinc-300">Collaboration.</span>
             </h2>
           </div>
           <div className="lg:col-span-6 flex flex-col justify-end">
             <p className="text-sm md:text-base font-light text-zinc-400 leading-relaxed font-sans">
-              Have an algorithm to classify, a dataset to analyze, or want to collaborate on Python or Web solutions? Let&apos;s build it.
+              Have a Django system to design, a database to model, or want to collaborate on Python backend solutions? Let&apos;s build it.
             </p>
           </div>
         </div>
@@ -49,10 +49,10 @@ export default function Contact() {
             <div>
               <p className="text-[10px] uppercase tracking-[0.2em] font-mono text-zinc-500 mb-2">DIRECT COMMUNICATION</p>
               <a 
-                href="mailto:venkatakowsalyamogili@gmail.com" 
-                className="text-lg sm:text-xl font-serif italic text-zinc-200 hover:text-[#00FF55] transition-colors duration-300 flex items-center gap-2 group interactive-hover break-all"
+                href="mailto:lenin.tulasi.3472@gmail.com" 
+                className="text-lg sm:text-xl font-serif italic text-zinc-200 hover:text-white transition-colors duration-300 flex items-center gap-2 group interactive-hover break-all"
               >
-                <span>venkatakowsalyamogili@gmail.com</span>
+                <span>lenin.tulasi.3472@gmail.com</span>
                 <ArrowUpRight size={18} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform flex-shrink-0" />
               </a>
             </div>
@@ -69,10 +69,10 @@ export default function Contact() {
                         <circle cx="4" cy="4" r="2" />
                       </svg>
                     ), 
-                    url: 'https://www.linkedin.com/in/venkata-kowsalyamogili-5b71b3354', 
+                    url: 'https://www.linkedin.com/in/kalavakuri-tulasi-978160335', 
                     label: 'LinkedIn' 
                   },
-                  { icon: <Mail size={18} />, url: 'mailto:venkatakowsalyamogili@gmail.com', label: 'Email' }
+                  { icon: <Mail size={18} />, url: 'mailto:lenin.tulasi.3472@gmail.com', label: 'Email' }
                 ].map((social, idx) => (
                   <a
                     key={idx}
@@ -80,7 +80,7 @@ export default function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={social.label}
-                    className="w-10 h-10 rounded-xl bg-zinc-900 border border-white/5 hover:border-[#00FF55]/40 hover:bg-[#00FF55]/5 text-zinc-400 hover:text-[#00FF55] flex items-center justify-center transition-all duration-300 interactive-hover"
+                    className="w-10 h-10 rounded-lg bg-white/[0.02] border border-white/10 hover:border-white/20 hover:bg-white/[0.05] text-zinc-400 hover:text-white flex items-center justify-center transition-all duration-300"
                   >
                     {social.icon}
                   </a>
@@ -91,7 +91,7 @@ export default function Contact() {
             <div className="border-t border-white/5 pt-8">
               <p className="text-[10px] uppercase tracking-[0.2em] font-mono text-zinc-500 mb-2">LOCATION</p>
               <p className="text-sm text-zinc-400 font-light font-sans leading-relaxed">
-                Nekarikallu, Narasaraopet,<br />
+                Narasaraopet,<br />
                 Andhra Pradesh, India
               </p>
             </div>
@@ -110,11 +110,11 @@ export default function Contact() {
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   placeholder=" "
                   id="form-name"
-                  className="w-full bg-transparent border-b border-white/10 py-4 text-sm text-zinc-200 outline-none focus:border-[#00FF55] transition-colors peer"
+                  className="w-full bg-transparent border-b border-white/10 py-4 text-sm text-zinc-200 outline-none focus:border-white transition-colors peer"
                 />
                 <label 
                   htmlFor="form-name"
-                  className="absolute left-0 top-4 text-xs font-mono uppercase tracking-[0.2em] text-zinc-500 pointer-events-none transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:top-4 peer-focus:top-[-10px] peer-focus:text-[10px] peer-focus:text-[#00FF55] peer-[:not(:placeholder-shown)]:top-[-10px] peer-[:not(:placeholder-shown)]:text-[10px] peer-[:not(:placeholder-shown)]:text-zinc-400"
+                  className="absolute left-0 top-4 text-xs font-mono uppercase tracking-[0.2em] text-zinc-500 pointer-events-none transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:top-4 peer-focus:top-[-10px] peer-focus:text-[10px] peer-focus:text-white peer-[:not(:placeholder-shown)]:top-[-10px] peer-[:not(:placeholder-shown)]:text-[10px] peer-[:not(:placeholder-shown)]:text-zinc-400"
                 >
                   Your Name
                 </label>
@@ -129,11 +129,11 @@ export default function Contact() {
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   placeholder=" "
                   id="form-email"
-                  className="w-full bg-transparent border-b border-white/10 py-4 text-sm text-zinc-200 outline-none focus:border-[#00FF55] transition-colors peer"
+                  className="w-full bg-transparent border-b border-white/10 py-4 text-sm text-zinc-200 outline-none focus:border-white transition-colors peer"
                 />
                 <label 
                   htmlFor="form-email"
-                  className="absolute left-0 top-4 text-xs font-mono uppercase tracking-[0.2em] text-zinc-500 pointer-events-none transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:top-4 peer-focus:top-[-10px] peer-focus:text-[10px] peer-focus:text-[#00FF55] peer-[:not(:placeholder-shown)]:top-[-10px] peer-[:not(:placeholder-shown)]:text-[10px] peer-[:not(:placeholder-shown)]:text-zinc-400"
+                  className="absolute left-0 top-4 text-xs font-mono uppercase tracking-[0.2em] text-zinc-500 pointer-events-none transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:top-4 peer-focus:top-[-10px] peer-focus:text-[10px] peer-focus:text-white peer-[:not(:placeholder-shown)]:top-[-10px] peer-[:not(:placeholder-shown)]:text-[10px] peer-[:not(:placeholder-shown)]:text-zinc-400"
                 >
                   Your Email
                 </label>
@@ -148,11 +148,11 @@ export default function Contact() {
                   placeholder=" "
                   rows={4}
                   id="form-message"
-                  className="w-full bg-transparent border-b border-white/10 py-4 text-sm text-zinc-200 outline-none focus:border-[#00FF55] transition-colors peer resize-none"
+                  className="w-full bg-transparent border-b border-white/10 py-4 text-sm text-zinc-200 outline-none focus:border-white transition-colors peer resize-none"
                 />
                 <label 
                   htmlFor="form-message"
-                  className="absolute left-0 top-4 text-xs font-mono uppercase tracking-[0.2em] text-zinc-500 pointer-events-none transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:top-4 peer-focus:top-[-10px] peer-focus:text-[10px] peer-focus:text-[#00FF55] peer-[:not(:placeholder-shown)]:top-[-10px] peer-[:not(:placeholder-shown)]:text-[10px] peer-[:not(:placeholder-shown)]:text-zinc-400"
+                  className="absolute left-0 top-4 text-xs font-mono uppercase tracking-[0.2em] text-zinc-500 pointer-events-none transition-all peer-placeholder-shown:text-sm peer-placeholder-shown:top-4 peer-focus:top-[-10px] peer-focus:text-[10px] peer-focus:text-white peer-[:not(:placeholder-shown)]:top-[-10px] peer-[:not(:placeholder-shown)]:text-[10px] peer-[:not(:placeholder-shown)]:text-zinc-400"
                 >
                   Message
                 </label>
@@ -162,7 +162,7 @@ export default function Contact() {
               <div className="mt-4 flex items-center justify-between">
                 <button
                   type="submit"
-                  className="flex items-center gap-2 px-8 py-4 rounded-full border border-white/10 hover:border-[#00FF55] text-xs font-mono uppercase tracking-[0.15em] text-zinc-300 hover:text-[#00FF55] bg-transparent hover:bg-[#00FF55]/5 transition-all duration-300 interactive-hover"
+                  className="flex items-center gap-2 px-8 py-4 rounded-full border border-white/10 hover:border-white text-xs font-mono uppercase tracking-[0.15em] text-zinc-300 hover:text-white bg-transparent hover:bg-white/5 transition-all duration-300"
                 >
                   <span>Transmit Query</span>
                   <ArrowUpRight size={14} />
@@ -172,7 +172,7 @@ export default function Contact() {
                   <motion.span 
                     initial={{ opacity: 0, x: 20 }}
                     animate={{ opacity: 1, x: 0 }}
-                    className="text-xs font-mono text-[#00FF55] tracking-wider"
+                    className="text-xs font-mono text-white tracking-wider"
                   >
                     QUERY TRANSMITTED SECURELY
                   </motion.span>
@@ -187,9 +187,9 @@ export default function Contact() {
         {/* Footer Area */}
         <div className="mt-32 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
           <div className="flex items-center gap-2">
-            <div className="w-1.5 h-1.5 rounded-full bg-[#00FF55] neon-glow" />
+            <div className="w-1.5 h-1.5 rounded-full bg-white" />
             <span className="font-mono text-[9px] text-zinc-500 tracking-[0.2em] uppercase">
-              M. KOWSALYA // Nekarikallu 2026
+              K. TULASI // Narasaraopet 2027
             </span>
           </div>
           <span className="font-mono text-[9px] text-zinc-600 tracking-[0.15em] uppercase">

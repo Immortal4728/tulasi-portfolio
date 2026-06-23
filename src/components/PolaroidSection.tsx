@@ -33,7 +33,7 @@ export default function PolaroidSection() {
         >
           {/* Header indicator lines mimicking top of menu */}
           <div className="absolute top-[-8px] left-[15%] w-16 h-[1px] bg-zinc-700/50" />
-          <div className="absolute top-[-8px] left-[15%] w-2 h-2 rounded-full bg-[#00FF55] top-[-11px]" />
+          <div className="absolute top-[-8px] left-[15%] w-2 h-2 rounded-full bg-[#8B5CF6] top-[-11px]" />
           
           <div className="flex gap-4 md:gap-8 font-mono text-[10px] tracking-[0.2em] text-zinc-400">
             <a href="#about" className="hover:text-white transition-colors">ABOUT</a>
@@ -44,9 +44,9 @@ export default function PolaroidSection() {
 
           <a 
             href="#contact" 
-            className="flex items-center gap-2 bg-white text-[#030303] text-xs font-mono font-bold py-2 px-4 rounded-xl shadow-lg hover:bg-zinc-200 transition-colors"
+            className="flex items-center gap-2 bg-white text-[#05040a] text-xs font-mono font-bold py-2 px-4 rounded-xl shadow-lg hover:bg-zinc-200 transition-colors"
           >
-            <div className="w-4 h-4 rounded-full bg-[#00FF55] flex items-center justify-center">
+            <div className="w-4 h-4 rounded-full bg-[#8B5CF6] flex items-center justify-center">
               <svg className="w-2.5 h-2.5 fill-current text-black translate-x-[0.5px]" viewBox="0 0 24 24">
                 <path d="M8 5v14l11-7z" />
               </svg>
@@ -110,7 +110,7 @@ export default function PolaroidSection() {
               <div className="relative aspect-[4/5] bg-zinc-950 w-full overflow-hidden border border-zinc-200/90">
                 <Image 
                   src="/developer_portrait.png" 
-                  alt="M. Kowsalya portrait" 
+                  alt="K. Tulasi portrait" 
                   fill
                   className="object-cover grayscale-[15%] group-hover:grayscale-0 transition-all duration-700"
                   sizes="(max-w-md) 300px, 400px"
@@ -120,29 +120,29 @@ export default function PolaroidSection() {
 
               {/* Signature under Image */}
               <span className="font-script text-zinc-800 text-3xl mt-5 block text-center font-normal tracking-wide">
-                M. Kowsalya
+                K. Tulasi
               </span>
 
-              {/* Yellow Winking Sticker */}
+              {/* Cyan Python Sticker */}
               <motion.div 
                 initial={{ scale: 0, rotate: 10 }}
                 whileInView={{ scale: 1, rotate: 15 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, type: "spring", delay: 0.8 }}
-                className="absolute bottom-6 right-[-24px] z-30 w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center shadow-lg border border-amber-300 text-2xl select-none"
+                className="absolute bottom-6 right-[-24px] z-30 w-12 h-12 bg-cyan-500 rounded-full flex items-center justify-center shadow-lg border border-cyan-400 text-2xl select-none"
               >
-                😉
+                🐍
               </motion.div>
 
-              {/* Pink Tilted Logo Sticker */}
+              {/* Cyber Yellow Tilted Sticker */}
               <motion.div 
                 initial={{ scale: 0, rotate: -25 }}
                 whileInView={{ scale: 1, rotate: -12 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, type: "spring", delay: 0.6 }}
-                className="absolute bottom-6 left-[-28px] z-30 bg-gradient-to-br from-pink-500 to-rose-600 text-white font-mono font-black text-[11px] py-1.5 px-3.5 tracking-[0.2em] rounded-md shadow-xl border border-pink-400/40 uppercase rotate-[-12deg] select-none"
+                className="absolute bottom-6 left-[-28px] z-30 bg-gradient-to-br from-yellow-400 to-amber-500 text-zinc-950 font-mono font-black text-[11px] py-1.5 px-3.5 tracking-[0.2em] rounded-md shadow-xl border border-yellow-300/40 uppercase rotate-[-12deg] select-none"
               >
-                CSE
+                DJANGO
               </motion.div>
 
             </motion.div>
@@ -159,7 +159,7 @@ export default function PolaroidSection() {
               transition={{ duration: 0.8 }}
               className="text-7xl md:text-8xl font-serif italic text-zinc-200 font-light leading-none relative"
             >
-              Hey<span className="text-[#00FF55] font-bold">!</span>
+              Hey<span className="text-[#8B5CF6] font-bold">!</span>
             </motion.h2>
 
             {/* Geometric Paragraph Statement */}
@@ -170,11 +170,11 @@ export default function PolaroidSection() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="font-mono text-zinc-300 tracking-[0.08em] text-xs md:text-sm leading-relaxed max-w-md flex flex-col gap-2 border-l border-zinc-800/80 pl-6 text-left py-2"
             >
-              <p>I&apos;M M. KOWSALYA - A CSE STUDENT WHO</p>
+              <p>I&apos;M K. TULASI - A CSE STUDENT WHO</p>
               <p>LIVES AND BREATHES CODE. WHETHER IT&apos;S</p>
-              <p>BUILDING A ML DROWSINESS ALERT SYSTEM,</p>
-              <p>OR ANALYZING DATA STRESS METRICS.</p>
-              <p className="text-zinc-100 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-zinc-100 to-zinc-400">PYTHON ENGINEERING FUELS ALL I DO.</p>
+              <p>DEVELOPING ROBUST DJANGO BACKEND SYSTEMS,</p>
+              <p>OR SOLVING COMPLEX ALGORITHMIC CHALLENGES.</p>
+              <p className="text-zinc-100 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-zinc-100 to-zinc-400">BACKEND ENGINEERING FUELS ALL I DO.</p>
             </motion.div>
 
             {/* Floating arrow icon below paragraph */}
@@ -183,7 +183,7 @@ export default function PolaroidSection() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-zinc-500 mt-2 hover:border-[#00FF55]/40 hover:text-[#00FF55] transition-all"
+              className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-zinc-500 mt-2 hover:border-[#8B5CF6]/40 hover:text-[#8B5CF6] transition-all"
             >
               <span className="text-lg">↗</span>
             </motion.div>
@@ -196,12 +196,12 @@ export default function PolaroidSection() {
         <div className="w-full flex flex-col sm:flex-row justify-center items-center gap-6 mt-8">
           {/* Email Badge */}
           <motion.a 
-            href="mailto:venkatakowsalyamogili@gmail.com" 
+            href="mailto:lenin.tulasi.3472@gmail.com" 
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="flex items-center gap-3 bg-[#0a0a0a] border border-white/5 rounded-xl px-5 py-3 hover:border-white/20 transition-all font-mono text-[10px] tracking-widest text-zinc-400 hover:text-white"
+            className="flex items-center gap-3 bg-[#0e0c18] border border-white/5 rounded-xl px-5 py-3 hover:border-white/20 transition-all font-mono text-[10px] tracking-widest text-zinc-400 hover:text-white"
           >
             <div className="w-6 h-6 rounded-lg bg-zinc-900 flex items-center justify-center">
               <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -209,19 +209,19 @@ export default function PolaroidSection() {
                 <polyline points="22,6 12,13 2,6" />
               </svg>
             </div>
-            <span>VENKATAKOWSALYAMOGILI@GMAIL.COM</span>
+            <span>LENIN.TULASI.3472@GMAIL.COM</span>
           </motion.a>
 
           {/* LinkedIn Badge */}
           <motion.a 
-            href="https://www.linkedin.com/in/venkata-kowsalyamogili-5b71b3354" 
+            href="https://www.linkedin.com/in/kalavakuri-tulasi-978160335" 
             target="_blank" 
             rel="noopener noreferrer"
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.15 }}
-            className="flex items-center gap-3 bg-[#0a0a0a] border border-white/5 rounded-xl px-5 py-3 hover:border-white/20 transition-all font-mono text-[10px] tracking-widest text-zinc-400 hover:text-white"
+            className="flex items-center gap-3 bg-[#0e0c18] border border-white/5 rounded-xl px-5 py-3 hover:border-white/20 transition-all font-mono text-[10px] tracking-widest text-zinc-400 hover:text-white"
           >
             <div className="w-6 h-6 rounded-lg bg-[#0077b5]/10 text-[#0077b5] flex items-center justify-center">
               <svg className="w-4.5 h-4.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -230,7 +230,7 @@ export default function PolaroidSection() {
                 <circle cx="4" cy="4" r="2" />
               </svg>
             </div>
-            <span>LINKEDIN.COM/IN/VENKATA-KOWSALYAMOGILI-5B71B3354</span>
+            <span>LINKEDIN.COM/IN/KALAVAKURI-TULASI-978160335</span>
           </motion.a>
         </div>
 

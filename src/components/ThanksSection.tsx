@@ -18,7 +18,7 @@ export default function ThanksSection() {
   };
 
   return (
-    <section className="relative w-full bg-[#030303] overflow-hidden pt-24 border-t border-white/5 select-none">
+    <section className="relative w-full bg-[#05040a] overflow-hidden pt-24 border-t border-white/5 select-none">
       
       {/* Background blueprint lines */}
       <svg className="absolute inset-0 w-full h-full pointer-events-none opacity-20" aria-hidden="true">
@@ -43,15 +43,15 @@ export default function ThanksSection() {
               Thanks
             </motion.h2>
 
-            {/* Cursive green "for" */}
+            {/* Minimalist divider text */}
             <motion.span
-              initial={{ opacity: 0, scale: 0.8, rotate: -15 }}
-              whileInView={{ opacity: 1, scale: 1, rotate: -6 }}
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="font-script text-[#00FF55] text-6xl sm:text-7xl md:text-8xl tracking-normal inline-block select-none rotate-[-6deg] lowercase relative z-20 my-2 filter drop-shadow-[0_0_15px_rgba(0,255,85,0.4)]"
+              transition={{ duration: 0.6, delay: 0.15 }}
+              className="font-mono text-zinc-550 text-xs sm:text-sm tracking-[0.4em] uppercase inline-block my-4"
             >
-              for
+              — for —
             </motion.span>
 
             {/* Reading */}
@@ -89,15 +89,15 @@ export default function ThanksSection() {
             </svg>
           </div>
 
-          {/* Pink CSE sticker on the right */}
+          {/* Editorial Badge */}
           <motion.div
             initial={{ scale: 0, rotate: -5 }}
-            whileInView={{ scale: 1, rotate: 14 }}
+            whileInView={{ scale: 1, rotate: 8 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, type: "spring", delay: 0.8 }}
-            className="absolute right-[5%] sm:right-[15%] top-[25%] bg-gradient-to-br from-pink-500 to-rose-600 text-white font-mono font-black text-xs py-2 px-5 tracking-[0.2em] rounded-lg shadow-2xl border border-pink-400/40 uppercase rotate-[14deg] select-none z-20"
+            transition={{ duration: 0.6, type: "spring", delay: 0.6 }}
+            className="absolute right-[5%] sm:right-[15%] top-[25%] bg-white text-zinc-950 font-mono font-bold text-[9px] py-1.5 px-4 tracking-[0.25em] rounded-md border border-white uppercase rotate-[8deg] select-none z-20"
           >
-            CSE
+            SYS.DEV // 2027
           </motion.div>
 
         </div>
@@ -106,50 +106,52 @@ export default function ThanksSection() {
         <div className="w-full flex flex-col md:flex-row justify-between items-center border-t border-white/5 py-10 gap-8 mt-4 text-center md:text-left">
           <div className="flex flex-col sm:flex-row gap-4 font-mono text-[10px] tracking-wider text-zinc-500">
             <a 
-              href="mailto:venkatakowsalyamogili@gmail.com" 
-              className="flex items-center justify-center gap-2 hover:text-[#00FF55] transition-colors"
+              href="mailto:lenin.tulasi.3472@gmail.com" 
+              className="flex items-center justify-center gap-2 hover:text-white transition-colors"
             >
               <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                 <polyline points="22,6 12,13 2,6" />
               </svg>
-              <span>VENKATAKOWSALYAMOGILI@GMAIL.COM</span>
+              <span>LENIN.TULASI.3472@GMAIL.COM</span>
             </a>
-            <span className="hidden sm:inline text-zinc-800">|</span>
+            <span className="hidden sm:inline text-zinc-850">|</span>
             <a 
-              href="https://www.linkedin.com/in/venkata-kowsalyamogili-5b71b3354" 
+              href="https://www.linkedin.com/in/kalavakuri-tulasi-978160335" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 hover:text-[#00FF55] transition-colors"
+              className="flex items-center justify-center gap-2 hover:text-white transition-colors"
             >
               <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
                 <rect x="2" y="9" width="4" height="12" />
                 <circle cx="4" cy="4" r="2" />
               </svg>
-              <span>LN.COM/IN/VENKATA-KOWSALYAMOGILI-5B71B3354</span>
+              <span>LN.COM/IN/KALAVAKURI-TULASI-978160335</span>
             </a>
           </div>
 
           <div className="font-mono text-[9px] text-zinc-600 tracking-[0.2em] uppercase">
-            M. Kowsalya // Nekarikallu 2026
+          K. Tulasi // Narasaraopet 2027
           </div>
         </div>
 
       </div>
 
       {/* BEHANCE STYLE FOOTER */}
-      <footer className="w-full bg-[#0a0a0a] border-t border-white/5 py-12 px-6 flex flex-col items-center gap-6">
+      <footer className="w-full bg-[#0e0c18] border-t border-white/5 py-12 px-6 flex flex-col items-center gap-6">
         <p className="font-mono text-[10px] text-zinc-500 tracking-[0.15em] uppercase">
-          Follow me on: <a href="https://www.linkedin.com/in/venkata-kowsalyamogili-5b71b3354" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#00FF55] underline transition-colors">LINKEDIN</a>
+          Follow me on: <a href="https://www.linkedin.com/in/kalavakuri-tulasi-978160335" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#8B5CF6] underline transition-colors">LINKEDIN</a>
         </p>
 
         {/* Blue Behance-like Like Button */}
         <motion.div 
           onClick={handleLike}
           whileTap={{ scale: 0.95 }}
-          className={`w-14 h-14 rounded-full flex items-center justify-center cursor-pointer shadow-lg transition-all duration-300 ${
-            liked ? 'bg-[#00FF55] text-[#030303] shadow-[0_0_20px_rgba(0,255,85,0.4)]' : 'bg-[#0055ff] text-white hover:bg-[#1a66ff]'
+          className={`w-14 h-14 rounded-full flex items-center justify-center cursor-pointer border transition-all duration-300 ${
+            liked 
+              ? 'bg-white text-zinc-950 border-white' 
+              : 'bg-transparent text-white border-white/20 hover:border-white/50 hover:bg-white/5'
           }`}
         >
           <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
@@ -159,7 +161,7 @@ export default function ThanksSection() {
 
         {/* Title */}
         <h3 className="font-sans text-xs md:text-sm font-semibold tracking-[0.25em] text-zinc-300 uppercase text-center mt-2">
-          CSE &amp; MACHINE LEARNING PORTFOLIO 2026 | MOGILI VENKATA KOWSALYA
+          CSE &amp; BACKEND PORTFOLIO 2027 | KALAVAKURI TULASI
         </h3>
 
         {/* Statistics Row */}

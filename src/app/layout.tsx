@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Cormorant_Garamond, Outfit, Caveat } from "next/font/google";
+import { Cormorant_Garamond, Plus_Jakarta_Sans, Caveat } from "next/font/google";
 import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
@@ -9,8 +9,8 @@ const cormorant = Cormorant_Garamond({
   weight: ["300", "400", "500", "600", "700"],
 });
 
-const outfit = Outfit({
-  variable: "--font-outfit",
+const plusJakarta = Plus_Jakarta_Sans({
+  variable: "--font-plus-jakarta",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800"],
 });
@@ -22,9 +22,9 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
-  title: "Mogili Venkata Kowsalya | Python Developer & CSE Student",
-  description: "Mogili Venkata Kowsalya is a Computer Science & Engineering student and Python developer. Minimalist, premium portfolio showcasing machine learning systems, web technologies, and academic certifications.",
-  authors: [{ name: "Mogili Venkata Kowsalya" }],
+  title: "Kalavakuri Tulasi | Python & Django Developer | CSE Student",
+  description: "Kalavakuri Tulasi is a Computer Science & Engineering student, specialized in Python and Django backend engineering. Premium portfolio showcasing backend web systems, clean architecture, and technical certifications.",
+  authors: [{ name: "Kalavakuri Tulasi" }],
 };
 
 export const viewport: Viewport = {
@@ -40,10 +40,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${cormorant.variable} ${outfit.variable} ${caveat.variable} h-full antialiased`}
+      className={`${cormorant.variable} ${plusJakarta.variable} ${caveat.variable} h-full antialiased`}
       style={{ scrollBehavior: 'smooth' }}
     >
-      <body className="min-h-full bg-[#030303] text-zinc-100 overflow-x-hidden selection:bg-[#00FF55] selection:text-[#030303] font-sans">
+      <body className="min-h-full bg-[#05040a] text-zinc-100 overflow-x-hidden selection:bg-[#8B5CF6] selection:text-[#05040a] font-sans">
         {children}
       </body>
     </html>
